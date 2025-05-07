@@ -1,0 +1,82 @@
+﻿<Page
+    x:Class="EposToolV5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EposToolV5"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    xmlns:views="using:EposToolV5.Views"
+    xmlns:vm="using:EposToolV5.ViewModels"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="TabViewItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabViewItem">
+                        <Grid x:Name="RootGrid">
+                            <Border
+                                x:Name="Border"
+                                Padding="12,8"
+                                Background="Transparent">
+                                <StackPanel>
+                                    <TextBlock
+                                        x:Name="TextBlock"
+                                        HorizontalAlignment="Center"
+                                        FontSize="14"
+                                        Foreground="#808080"
+                                        Text="{TemplateBinding Header}" />
+                                    <Rectangle
+                                        x:Name="Underline"
+                                        Height="3"
+                                        Margin="0,4,0,0"
+                                        Fill="#15C39A"
+                                        RadiusX="1.5"
+                                        RadiusY="1.5"
+                                        Visibility="Collapsed" />
+                                </StackPanel>
+                            </Border>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Target="TextBlock.Foreground" Value="#15C39A" />
+                                            <Setter Target="Underline.Visibility" Value="Visible" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="PointerOver">
+                                        <VisualState.Setters>
+                                            <Setter Target="TextBlock.Foreground" Value="#CCCCCC" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Target="TextBlock.Foreground" Value="#15C39A" />
+                                            <Setter Target="Underline.Visibility" Value="Visible" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <TabView
+            x:Name="MainTab"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Background="#1F1F1F"
+            IsAddTabButtonVisible="False"
+            SelectedIndex="1"
+            TabStripFooter="{x:Null}"
+            TabStripHeader="{x:Null}"
+            TabWidthMode="Equal">
+            <TabViewItem Header="Home" />
+            <TabViewItem Header="Sync Order">
+                <views:SyncOrderPage />
+            </TabViewItem>
+        </TabView>
+    </Grid>
+</Page>

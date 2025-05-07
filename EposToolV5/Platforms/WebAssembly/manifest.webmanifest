@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "EposToolV5",
+  "display": "standalone",
+  "name": "EposToolV5",
+  "short_name": "EposToolV5",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
