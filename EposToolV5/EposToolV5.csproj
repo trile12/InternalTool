@@ -1,0 +1,59 @@
+﻿<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0-browserwasm;net9.0-desktop</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+    <!-- Display name -->
+    <ApplicationTitle>EposToolV5</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.EposToolV5</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>ADMIN</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>EposToolV5 powered by Uno Platform.</Description>
+
+    <!--
+      UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
+      https://aka.platform.uno/singleproject-features
+    -->
+      <UnoFeatures>
+          Lottie;
+          Hosting;
+          Toolkit;
+          Logging;
+          LoggingSerilog;
+          Mvvm;
+          Configuration;
+          Http;
+          Serialization;
+          Localization;
+          Navigation;
+          ThemeService;
+      </UnoFeatures>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="JsonApiSerializer" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" />
+    <PackageReference Include="Microsoft.JSInterop" />
+    <PackageReference Include="RestSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\SyncOrderPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Platforms\WebAssembly\wwwroot\interop.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+  </ItemGroup>
+
+</Project>
