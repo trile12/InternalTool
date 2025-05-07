@@ -4,10 +4,10 @@ using Microsoft.UI.Xaml;
 using Uno.Extensions;
 using Uno.Extensions.Hosting;
 using Uno.Extensions.Navigation;
-using EposToolV5.ViewModels;
+using InternalTool.ViewModels;
 using Microsoft.JSInterop;
 
-namespace EposToolV5;
+namespace InternalTool;
 
 public sealed partial class App : Application
 {

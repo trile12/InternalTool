@@ -1,4 +1,4 @@
-using EposToolV5.Presentation.Models;
+using InternalTool.Presentation.Models;
 using JsonApiSerializer;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
@@ -12,7 +12,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Windows.Media.Protection.PlayReady;
 
-namespace EposToolV5.ViewModels;
+namespace InternalTool.ViewModels;
 
 public partial class SyncOrderViewModel : ObservableObject
 {

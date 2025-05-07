@@ -1,4 +1,4 @@
-﻿<Project Sdk="Uno.Sdk">
+<Project Sdk="Uno.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net9.0-browserwasm;net9.0-desktop</TargetFrameworks>
 
@@ -6,16 +6,16 @@
     <UnoSingleProject>true</UnoSingleProject>
 
     <!-- Display name -->
-    <ApplicationTitle>EposToolV5</ApplicationTitle>
+    <ApplicationTitle>InternalTool</ApplicationTitle>
     <!-- App Identifier -->
-    <ApplicationId>com.companyname.EposToolV5</ApplicationId>
+    <ApplicationId>com.companyname.InternalTool</ApplicationId>
     <!-- Versions -->
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <ApplicationVersion>1</ApplicationVersion>
     <!-- Package Publisher -->
     <ApplicationPublisher>ADMIN</ApplicationPublisher>
     <!-- Package Description -->
-    <Description>EposToolV5 powered by Uno Platform.</Description>
+    <Description>InternalTool powered by Uno Platform.</Description>
 
     <!--
       UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.

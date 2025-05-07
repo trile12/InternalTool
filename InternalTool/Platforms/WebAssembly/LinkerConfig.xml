@@ -1,5 +1,5 @@
 <linker>
-  <assembly fullname="EposToolV5" />
+  <assembly fullname="InternalTool" />
 
   <!--
   Uncomment this section when using JSON.NET

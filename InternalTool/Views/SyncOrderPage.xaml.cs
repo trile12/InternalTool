@@ -1,6 +1,6 @@
-using EposToolV5.ViewModels;
+using InternalTool.ViewModels;
 
-namespace EposToolV5.Views;
+namespace InternalTool.Views;
 
 public sealed partial class SyncOrderPage : Page
 {

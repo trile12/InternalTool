@@ -1,6 +1,6 @@
 using Uno.UI.Runtime.Skia;
 
-namespace EposToolV5;
+namespace InternalTool;
 public class Program
 {
     [STAThread]

@@ -1,9 +1,9 @@
 {
   "background_color": "#ffffff",
-  "description": "EposToolV5",
+  "description": "InternalTool",
   "display": "standalone",
-  "name": "EposToolV5",
-  "short_name": "EposToolV5",
+  "name": "InternalTool",
+  "short_name": "InternalTool",
   "start_url": "/index.html",
   "theme_color": "#ffffff",
   "scope": "/"

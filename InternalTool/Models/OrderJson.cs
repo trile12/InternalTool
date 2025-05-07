@@ -2,7 +2,7 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Text.Json;
 
-namespace EposToolV5.Presentation.Models;
+namespace InternalTool.Presentation.Models;
 public class RestOrder
 {
     [JsonProperty("type")]

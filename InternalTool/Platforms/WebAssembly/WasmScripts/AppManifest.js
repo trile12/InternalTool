@@ -3,7 +3,7 @@
 var UnoAppManifest = {
     splashScreenImage: "Assets/SplashScreen.png",
     splashScreenColor: "#fff",
-    displayName: "EposToolV5",
+    displayName: "InternalTool",
 
     loader: {
         scripts: ["file-picker.js"]

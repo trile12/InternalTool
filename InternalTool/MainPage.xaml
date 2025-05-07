@@ -1,11 +1,11 @@
 ﻿<Page
-    x:Class="EposToolV5.MainPage"
+    x:Class="InternalTool.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:EposToolV5"
+    xmlns:local="using:InternalTool"
     xmlns:utu="using:Uno.Toolkit.UI"
-    xmlns:views="using:EposToolV5.Views"
-    xmlns:vm="using:EposToolV5.ViewModels"
+    xmlns:views="using:InternalTool.Views"
+    xmlns:vm="using:InternalTool.ViewModels"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
         <Style TargetType="TabViewItem">

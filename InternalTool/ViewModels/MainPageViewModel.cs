@@ -1,4 +1,4 @@
-namespace EposToolV5.ViewModels
+namespace InternalTool.ViewModels
 {
     public partial class MainPageViewModel: ObservableObject
     {

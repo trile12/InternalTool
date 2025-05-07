@@ -1,4 +1,4 @@
-namespace EposToolV5.Presentation.Models;
+namespace InternalTool.Presentation.Models;
 
 public class LogInfo : ObservableObject
 {

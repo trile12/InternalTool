@@ -1,4 +1,4 @@
-namespace EposToolV5;
+namespace InternalTool;
 
 public class Program
 {
